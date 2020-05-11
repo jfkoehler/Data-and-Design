@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v5.min.js"></script> 
+    </head>
+
+    <body>
+        <!-- <svg id = "svg" style = "width: 100%; height: 800px"> -->
+     </body>
+
+     <script> 
+        
+        // var svgContainer = d3.select("body").append("svg")
+        //                                     .attr("width", 2000)
+        //                                     .attr("height", 2000);
+        // var rectangle = svgContainer.append("rect")
+        //                      .attr("x", 10)
+        //                      .attr("y", 10)
+        //                     .attr("width", 60)
+        //                     .attr("height", 60);
+        
+        // rectangle.transition()
+        //   .duration(1000)
+        //   .attr('x', 1000)
+        //   .transition()
+        //   .attr('x', 0)
+        // //   .attr('ry', 500)
+        // //   .style('fill', 'red');
+
+        var svg2 = d3.select("body").append("svg")
+                                            .attr("width", 2000)
+                                            .attr("height", 2000);
+        var circ = svg2.append('circle')
+                        .attr('cx', 10)
+                        .attr('cy', 10)
+                        .attr('r', 10)
+
+                circ.transition()
+                    .duration(1000)
+                    .attr('cx', 500)
+                    .transition()
+                    .attr('cy', 500)
+                    .attr('r', 20)
+
+    </script>
+
+</html>

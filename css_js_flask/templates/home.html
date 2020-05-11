@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = "container">
+    <br/>
+    <br/>
+    <h1>Introducing JavaScript</h1>
+<div class="card-columns">
+{% for ex in examples %}
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Example {{  ex[0] }}</h5>
+        <p class="card-text">Here is example {{ ex[0] }}</p>
+        <a href={{ ex[1] }} class="btn btn-primary">View {{ ex[0] }}</a>
+      </div>
+    </div>
+
+{% endfor %}
+</div>
+</div>
+{% endblock %}
